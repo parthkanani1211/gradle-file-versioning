@@ -44,3 +44,12 @@ gradlePlugin {
 		}
 	}
 }
+
+jar {
+    manifest {
+        attributes(
+                'Multi-Release': 'true',
+                'Main-Class': 'de.epitschke.gradle.fileversioning.FileVersioningPlugin'
+        )
+    }
+}
